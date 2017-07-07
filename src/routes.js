@@ -1,8 +1,10 @@
 import AboutPage from './assets/vue/pages/about.vue'
+import XartisTabs from './assets/vue/tabs.vue'
 
 export default [
     {
         path: '/',
+        component: XartisTabs,
         tabs: [
             {
                 path: '/',
@@ -16,7 +18,7 @@ export default [
             },
             {
                 path: '/tab-3/',
-                tabId: 'tab3',
+                tabIId: 'tab3',
                 component: AboutPage
             },
             {

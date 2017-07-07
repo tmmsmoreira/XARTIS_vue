@@ -31,7 +31,7 @@ import App from './main.vue'
 Vue.use(Framework7Vue)
 
 // Init App
-new Vue({
+var XartisApp = new Vue({
     el: '#app',
     template: '<app/>',
     // Init Framework7 by passing parameters here
@@ -40,7 +40,10 @@ new Vue({
         /* Uncomment to enable Material theme: */
         material: true,
         routes: Routes,
-        animatePages: true
+        animatePages: true,
+        cache: false,
+        domCache: false,
+        pushState: false,
     },
     // Register App Component
     components: {
