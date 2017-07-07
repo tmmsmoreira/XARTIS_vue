@@ -7,20 +7,18 @@
 
 		<!-- Main Views -->
 		<f7-views tabs toolbar-through>
-			<f7-view id="tab1" route-tab-id="tab1" tab has-tabbar main navbar-fixed active>
-				<f7-pages></f7-pages>
-			</f7-view>
+			<f7-view id="tab1" route-tab-id="tab1" init tab has-tabbar main navbar-fixed active></f7-view>
 
 			<f7-view id="tab2" route-tab-id="tab2" tab has-tabbar>
-				<f7-pages></f7-pages>
+				<f7-pages><about-page></about-page></f7-pages>
 			</f7-view>
 
 			<f7-view id="tab3" route-tab-id="tab3" tab has-tabbar>
-				<f7-pages></f7-pages>
+				<f7-pages><about-page></about-page></f7-pages>
 			</f7-view>
 
 			<f7-view id="tab4" route-tab-id="tab4" tab has-tabbar>
-				<f7-pages></f7-pages>
+				<f7-pages><about-page></about-page></f7-pages>
 			</f7-view>
 
 
@@ -54,15 +52,30 @@
 				<span class="tab-link-highlight" style="width: 25%; transform: translate3d(0%, 0px, 0px);"></span>
 			</f7-toolbar>-->
 
+			<!--
 			<f7-toolbar tabbar labels bottom>
-				<f7-link iconF7="true" iconMaterial="room" tabLink="true" text="Perto" href="/" route-tab-link="#tab1" active></f7-link>
-				<f7-link iconF7="true" iconMaterial="photo_camera" tabLink="true" text="Câmara" href="/tab-2/" route-tab-link="#tab2"></f7-link>
-				<f7-link iconF7="true" iconMaterial="explore" tabLink="true" text="Rotas" href="/tab-3/" route-tab-link="#tab3"></f7-link>
-				<f7-link iconF7="true" iconMaterial="local_mall" tabLink="true" text="Comprar" href="/tab-4/" route-tab-link="#tab4"></f7-link>
+				<f7-link icon-f7="room" :href="active == '' ? '#' : '/'" text="Perto" tabLink="true" ignore-cache></f7-link>
+				<f7-link icon-f7="photo_camera" tabLink="true" text="Câmara" href="/tab-2/" ignore-cache></f7-link>
+				<f7-link icon-f7="explore" tabLink="true" text="Rotas" href="/tab-3/" ignore-cache></f7-link>
+				<f7-link icon-f7="local_mall" tabLink="true" text="Comprar" href="/tab-4/" ignore-cache></f7-link>
 				<span class="tab-link-highlight" style="width: 25%; transform: translate3d(0%, 0px, 0px);"></span>
 			</f7-toolbar>
+			-->
 
+			<xartis-toolbar></xartis-toolbar>
 		</f7-views>
 
 	</div>
 </template>
+
+<script>
+	import XartisToolbar from './assets/vue/toolbar.vue'
+	import AboutPage from './assets/vue/pages/about.vue'
+
+	export default {
+		components: { XartisToolbar, AboutPage },
+		data: function() {
+			return {}
+		}
+	}
+</script>

@@ -30,7 +30,6 @@ import App from './main.vue'
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
 
-
 // Init App
 new Vue({
     el: '#app',
@@ -40,7 +39,8 @@ new Vue({
         root: '#app',
         /* Uncomment to enable Material theme: */
         material: true,
-        routes: Routes
+        routes: Routes,
+        animatePages: true
     },
     // Register App Component
     components: {

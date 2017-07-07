@@ -1,3 +1,5 @@
+import AboutPage from './assets/vue/pages/about.vue'
+
 export default [
     {
         path: '/',
@@ -5,22 +7,22 @@ export default [
             {
                 path: '/',
                 tabId: 'tab1',
-                component: require('./assets/vue/pages/about.vue')
+                component: AboutPage
             },
             {
                 path: '/tab-2/',
                 tabId: 'tab2',
-                component: require('./assets/vue/pages/about.vue')
+                component: AboutPage
             },
             {
                 path: '/tab-3/',
                 tabId: 'tab3',
-                component: require('./assets/vue/pages/about.vue')
+                component: AboutPage
             },
             {
                 path: '/tab-4/',
                 tabId: 'tab4',
-                component: require('./assets/vue/pages/about.vue')
+                component: AboutPage
             },
         ]
     }

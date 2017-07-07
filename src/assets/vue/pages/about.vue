@@ -1,5 +1,5 @@
 <template>
-	<f7-page>
+	<f7-page animatePages:true>
 		<f7-navbar title="Nearby" back-link="Back" sliding></f7-navbar>
 		<f7-block inner>
 			<p>Here is About page!</p>
