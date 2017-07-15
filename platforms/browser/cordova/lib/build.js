@@ -18,17 +18,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
- 
+
 var path    = require('path'),
     fs      = require('fs'),
     shjs    = require('shelljs'),
-    zip     = require('adm-zip'),
+    //zip     = require('adm-zip'),
     Q       = require('q'),
     clean   = require('./clean'),
     check_reqs = require('./check_reqs'),
     platformWwwDir          = path.join('platforms', 'browser', 'www'),
-    platformBuildDir        = path.join('platforms', 'browser', 'build'),
-    packageFile             = path.join(platformBuildDir, 'package.zip');
+    platformBuildDir        = path.join('platforms', 'browser', 'build');
+    //packageFile             = path.join(platformBuildDir, 'package.zip');
 
 /**
  * run
@@ -52,7 +52,7 @@ module.exports.run = function(){
         // add the project to a zipfile
         var zipFile = zip();
         zipFile.addLocalFolder(platformWwwDir, '.');
-        zipFile.writeZip(packageFile);
+        //zipFile.writeZip(packageFile);
 
         return Q.resolve();
 

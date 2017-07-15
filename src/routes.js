@@ -1,4 +1,5 @@
 import AboutPage from './assets/vue/pages/about.vue'
+import FormPage from './assets/vue/pages/form.vue'
 import XartisTabs from './assets/vue/tabs.vue'
 
 export default [
@@ -14,7 +15,7 @@ export default [
             {
                 path: '/tab-2/',
                 tabId: 'tab2',
-                component: AboutPage
+                component: FormPage
             },
             {
                 path: '/tab-3/',
