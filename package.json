@@ -41,7 +41,7 @@
         "cordova-plugin-whitelist": "1",
         "framework7": "^1.5.4",
         "framework7-vue": "^0.8.5",
-        "shelljs": "^0.7.8",
+        "shelljs": "^0.8.5",
         "vue": "^2.2.4",
         "webpack": "^3.0.0"
     },
